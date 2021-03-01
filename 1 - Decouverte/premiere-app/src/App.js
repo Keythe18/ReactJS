@@ -1,10 +1,14 @@
+import Composant from './Components/Personnage'
+import './app.css'
+
 function App() {
+
   return (
     <div>
-      <h1>Bonjour</h1>
-      <p>Hello</p>
+      <Composant />
     </div>
   );
 }
+
 
 export default App;
