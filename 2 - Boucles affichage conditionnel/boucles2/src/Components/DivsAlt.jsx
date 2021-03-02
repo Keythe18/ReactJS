@@ -1,13 +1,13 @@
 import React from "react";
 
-const DivsAlt = () => {
+const DivsAlt = ({color, sizer}) => {
   return (
     <div>
       <div
         style={{
-          background: "red",
-          width: 50 + "px",
-          height: 50 + "px",
+          background: color,
+          width: sizer + 'px',
+          height: sizer + 'px',
           margin: "10px",
         }}
       >

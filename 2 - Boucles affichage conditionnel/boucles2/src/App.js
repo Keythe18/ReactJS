@@ -3,6 +3,29 @@ import Divs from "./Components/Divs";
 import DivsAlt from './Components/DivsAlt'
 
 function App() {
+  const [color, setColor] = useState('black');
+  const [sizer, setSizer] = useState('100px');
+  const clickFunc = () => {
+    setColor('blue');
+    setSizer(50);
+  };
+  return (
+    <div>
+      <div>
+        <Divs clickFunc={clickFunc}/>
+        <DivsAlt color={color} sizer={sizer}/>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+
+/*import { useState } from "react";
+import Divs from "./Components/Divs";
+import DivsAlt from './Components/DivsAlt'
+
+function App() {
   const [hider, setHider] = useState(true);
   const clickFunc = () => {
     setHider(false);

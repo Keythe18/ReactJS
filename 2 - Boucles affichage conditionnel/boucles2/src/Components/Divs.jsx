@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 const Divs = ({clickFunc}) => {
 
   return (
@@ -13,7 +11,7 @@ const Divs = ({clickFunc}) => {
         }}
       >
         1
-        <button onClick={clickFunc}>Hide</button>
+        <button onClick={clickFunc}>Poof</button>
       </div>
     </>
   );
