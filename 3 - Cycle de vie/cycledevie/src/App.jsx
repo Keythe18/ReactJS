@@ -52,7 +52,7 @@ function App() {
         <br />
 
         <div>Score: {count}</div>
-        <br/>
+        <br />
         <button
           style={{ padding: "4px 10px", borderRadius: "3px" }}
           onClick={resetButton}
