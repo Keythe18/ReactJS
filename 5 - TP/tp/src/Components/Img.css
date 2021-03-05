@@ -1,0 +1,34 @@
+.btnLeft {
+  font-size: 50px;
+  border: solid;
+  line-height: 1;
+}
+
+.btnRight {
+  font-size: 50px;
+  border: solid;
+}
+
+.imgCenter {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  border: 2px solid lightgrey;
+}
+
+.center {
+  text-align: center;
+}
+
+#line {
+  width: 100px;
+  height: 100px;
+  margin: 8px;
+  padding: 5px;
+  border: 2px solid lightgrey;
+}
+
+#line img:hover{
+    width: 300px;
+    height: 300px;
+}
