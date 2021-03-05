@@ -1,22 +1,89 @@
-import Form from "./Components/Form";
-import { useState } from "react";
-import DisplayForm from "./Components/DisplayForm";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import './app.css'
+import Navbar from "./Template/Navbar";
+import Contact from "./Views/Contact";
+import Homepage from "./Views/Homepage";
+import Footer from "./Template/Footer"
 
 function App() {
-
-  const [inputValue, setInputValue] = useState("");
-  const [display, setDisplay] = useState('')
-
   return (
-    <div>
-      <Form inputValue={inputValue} setInputValue={setInputValue} setDisplay={setDisplay}/>
-      <br/>
-      <DisplayForm display={display} inputValue={inputValue}/>
-    </div>
+    <Router>
+
+    <Navbar/>
+
+      <Switch>
+
+        <Route path="/portfolio">
+          <h1>Portfolio</h1>
+        </Route>
+
+        <Route path="/contact">
+          <Contact/>
+        </Route>
+
+        <Route path="/">
+          <Homepage/>
+        </Route>
+      </Switch>
+
+      <Footer/>
+      
+    </Router>
   );
 }
 
 export default App;
+
+// import { useState } from "react";
+// import React from "react";
+// import { ChromePicker } from "react-color";
+
+// function App() {
+//   const [color, setColor] = useState("#fff");
+
+//   const handleChange = (color) => {
+//     setColor(color.hex);
+//   };
+//   return (
+//     <>
+//       <div>
+//         <ChromePicker color={color} onChange={handleChange} />
+//       </div>
+
+//       <div
+//         style={{
+//           width: "200px",
+//           height: "200px",
+//           marginTop: "20px",
+//           background: color,
+//         }}
+//       ></div>
+//     </>
+//   );
+// }
+
+// export default App;
+
+// import { useState } from "react";
+
+// import Form from "./Components/Form";
+// import DisplayForm from "./Components/DisplayForm";
+
+// function App() {
+
+//   const [inputValue, setInputValue] = useState("");
+//   const [display, setDisplay] = useState('')
+
+//   return (
+//     <div>
+//       <Form inputValue={inputValue} setInputValue={setInputValue} setDisplay={setDisplay}/>
+//       <br/>
+//       <DisplayForm display={display}/>
+//     </div>
+//   );
+// }
+
+// export default App;
 
 // import { useState } from "react";
 

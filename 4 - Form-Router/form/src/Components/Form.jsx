@@ -1,7 +1,14 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
 
 const Form = ({ inputValue, setInputValue, setDisplay }) => {
 
+    useEffect(() => {
+    maForm.current.style.background = 'green'
+    maForm.current.style.width = "100px";
+    maForm.current.style.height = "30px";
+  });
+
+  const maForm = useRef();
   const handleSubmit = (event) => {
     event.preventDefault();
     setDisplay(inputValue * 1.8 + 32)
@@ -14,8 +21,8 @@ const Form = ({ inputValue, setInputValue, setDisplay }) => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input type="text" onChange={handleChange}/>
-        <button>Clic</button>
+        <input ref={maForm} type="text" onChange={handleChange}/>
+        <button>cOwOnvert</button>
       </form>
     </div>
   );
