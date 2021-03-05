@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import './app.css'
+import {Helmet} from "react-helmet";
 import Navbar from "./Template/Navbar";
 import Contact from "./Views/Contact";
 import Homepage from "./Views/Homepage";
@@ -7,6 +8,12 @@ import Footer from "./Template/Footer"
 
 function App() {
   return (
+    <>
+    
+    <Helmet>
+      <titre>Mon super titre</titre>
+    </Helmet>
+
     <Router>
 
     <Navbar/>
@@ -29,6 +36,7 @@ function App() {
       <Footer/>
       
     </Router>
+    </>
   );
 }
 
