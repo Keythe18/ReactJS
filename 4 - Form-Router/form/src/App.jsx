@@ -1,3 +1,7 @@
+// package.json = >   "homepage":"./public/cloudcampus", basename path dans router aussi (index.d.ts) + basename="/public/cloudcampus"
+// npm run build
+//htc access si router est active
+
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./app.css";
 import { Helmet } from "react-helmet";
