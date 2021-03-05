@@ -1,10 +1,10 @@
 import React from "react";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   return (
     <>
-      <Helmet>
+      <Helmet defer={false}>
         <titre>Mon super titre</titre>
       </Helmet>
       <div>

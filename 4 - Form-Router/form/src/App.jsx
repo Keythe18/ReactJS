@@ -1,41 +1,37 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import './app.css'
-import {Helmet} from "react-helmet";
+import "./app.css";
+import { Helmet } from "react-helmet";
 import Navbar from "./Template/Navbar";
 import Contact from "./Views/Contact";
 import Homepage from "./Views/Homepage";
-import Footer from "./Template/Footer"
+import Footer from "./Template/Footer";
 
 function App() {
   return (
     <>
-    
-    <Helmet>
-      <titre>Mon super titre</titre>
-    </Helmet>
+      <Helmet>
+        <titre>Mon super titre</titre>
+      </Helmet>
 
-    <Router>
+      <Router>
+        <Navbar />
 
-    <Navbar/>
+        <Switch>
+          <Route path="/portfolio">
+            <h1>Portfolio</h1>
+          </Route>
 
-      <Switch>
+          <Route path="/contact">
+            <Contact />
+          </Route>
 
-        <Route path="/portfolio">
-          <h1>Portfolio</h1>
-        </Route>
+          <Route path="/">
+            <Homepage />
+          </Route>
+        </Switch>
 
-        <Route path="/contact">
-          <Contact/>
-        </Route>
-
-        <Route path="/">
-          <Homepage/>
-        </Route>
-      </Switch>
-
-      <Footer/>
-      
-    </Router>
+        <Footer />
+      </Router>
     </>
   );
 }
