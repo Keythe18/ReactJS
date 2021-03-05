@@ -1,6 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
+import './contact.scss'
+
 const Contact = () => {
   return (
     <>
