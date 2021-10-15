@@ -13,15 +13,6 @@ import Footer from "./Template/Footer";
 function App() {
   return (
     <>
-      <Helmet defer={false}>
-        <titre>Mon super titre</titre>
-        <meta name="description" content="Bienvenue sur mon super site"></meta>
-
-        <meta property="og:title" content=""></meta>
-        <meta property="og:description" content=""></meta>
-        <meta property="og:image" content=""></meta>
-      </Helmet>
-
       <Router>
         <Navbar />
 

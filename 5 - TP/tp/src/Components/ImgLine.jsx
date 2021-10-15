@@ -1,32 +1,37 @@
 import React from "react";
 import "./Img.css";
+import img1 from '../img/img1.jpg';
+import img2 from '../img/img2.jpg';
+import img3 from '../img/img3.jpg';
+import img4 from '../img/img4.jpg';
+import img5 from '../img/img5.jpg';
 
 const ImgLine = ({ setImgBig }) => {
   const images = [
     {
       nbr: 1,
-      name: "emoji1",
-      lien: "https://discord.com/assets/b426f77f42bb709bcb2faa23602d2dc4.svg",
+      name: "img1",
+      lien: img1,
     },
     {
       nbr: 2,
-      name: "emoji2",
-      lien: "https://discord.com/assets/6f75b58eb746d08c2c18451573876292.svg",
+      name: "img2",
+      lien: img2,
     },
     {
       nbr: 3,
-      name: "emoji3",
-      lien: "https://discord.com/assets/913e66b19410c0ca3e71fe837a29e093.svg",
+      name: "img3",
+      lien: img3,
     },
     {
       nbr: 4,
-      name: "emoji4",
-      lien: "https://discord.com/assets/2993ada413223a149555f5f68198043f.svg",
+      name: "img4",
+      lien: img4,
     },
     {
       nbr: 5,
-      name: "emoji5",
-      lien: "https://discord.com/assets/480eb6b0f6c22cbc1d98d6ff93e1edc1.svg",
+      name: "img5",
+      lien: img5,
     },
   ];
 

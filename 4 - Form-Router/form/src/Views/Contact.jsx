@@ -6,9 +6,6 @@ import './contact.scss'
 const Contact = () => {
   return (
     <>
-      <Helmet defer={false}>
-        <titre>Mon super titre</titre>
-      </Helmet>
       <div>
         <h1>Contact</h1>
         <form>

@@ -6,13 +6,15 @@ const ImgCenter = ({ imgBig }) => {
   const [count, setCount] = useState(1);
 
   const leftBracket = () => {
-    count === 1 ? setCount(5) : setCount((count) => count - 1)
-    console.log(count)
+    count === 1 ? setCount(5) : setCount((count) => count - 1);
+    console.log(imgBig);
+    //setImgBig();
   };
 
   const rightBracket = () => {
-    count === 5 ? setCount(1) : setCount((count) => count + 1)
-    console.log(count)
+    count === 5 ? setCount(1) : setCount((count) => count + 1);
+    console.log(imgBig);
+   // setImgBig();
   };
 
   return (
